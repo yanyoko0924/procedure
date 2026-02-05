@@ -3,18 +3,18 @@ const MAX_TRAINEES = 10;
 // 制度定義（←ここを書き換えれば制度改正に対応）
 const procedures = {
   first: [
-    { name: "手続き①", calc: (en, as) => addDays(en, -30) },
-    { name: "手続き②", calc: (en, as) => addDays(en, -10) },
-    { name: "手続き③", calc: (en, as) => addDays(as, 7) },
-    { name: "手続き④", calc: (en, as) => addDays(en, -90) },
-    { name: "手続き⑤", calc: (en, as) => addYears(en, 1, -1) },
+    { name: "入国準備", calc: (en, as) => addDays(en, -30) },
+    { name: "賃貸契約", calc: (en, as) => addDays(en, -10) },
+    { name: "配属", calc: (en, as) => addDays(as, 7) },
+    { name: "初回面談", calc: (en, as) => addDays(en, -90) },
+    { name: "在留カード更新", calc: (en, as) => addYears(en, 1, -1) },
   ],
   second: [
-    { name: "手続き⑥", calc: (en, as) => addDays(en, -30) },
-    { name: "手続き⑦", calc: (en, as) => addDays(en, -10) },
-    { name: "手続き⑧", calc: (en, as) => addDays(as, 7) },
-    { name: "手続き⑨", calc: (en, as) => addDays(en, -90) },
-    { name: "手続き⑩", calc: (en, as) => addYears(en, 1, -1) },
+    { name: "VISA取得", calc: (en, as) => addDays(en, -30) },
+    { name: "賃貸契約", calc: (en, as) => addDays(en, -10) },
+    { name: "配属", calc: (en, as) => addDays(as, 7) },
+    { name: "初回面談", calc: (en, as) => addDays(en, -90) },
+    { name: "在留カード更新", calc: (en, as) => addYears(en, 1, -1) },
   ]
 };
 
